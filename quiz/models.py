@@ -4,7 +4,7 @@ from django.db import models
 
 #user model --> quiz_users(table name)
 #can be extended to add more fields
-class users(models.Models):
+class users(models.Model):
     user_id = models.AutoField(primary_key=True)
     username = models.CharField( max_length=50)
     email = models.CharField(max_length=50)
